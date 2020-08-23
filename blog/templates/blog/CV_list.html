@@ -1,0 +1,56 @@
+{% extends 'blog/CV_base.html' %}
+
+{% block research %}
+<div class="row">
+  <h4 id="exp">Research</h4>
+</div>
+{% for list in lists %}
+  <div id="bottom_margin">
+    <p>{{ list.researches|linebreaksbr }}</p>
+  </div>
+{% endfor %}
+{% endblock research %}
+
+{% block education %}
+<div class="row">
+  <h4 id="exp">Education</h4>
+</div>
+  {% for list in lists %}
+    <div id="bottom_margin">
+      <p>{{ list.education|linebreaksbr }}</p>
+    </div>
+  {% endfor %}
+{% endblock education %}
+
+{% block experience %}
+<div class="row">
+  <h4 id="exp">Experience</h4>
+</div>
+{% for list in lists %}
+  <div id="bottom_margin">
+    <p>{{ list.work_experience|linebreaksbr }}</p>
+  </div>
+{% endfor %}
+{% endblock experience %}
+
+{% block  skills %}
+<div class="row">
+  <h4 id="exp">Technical Skills</h4>
+</div>
+{% for list in lists %}
+  <div id="bottom_margin">
+    <p>{{ list.technical_skills|linebreaksbr }}</p>
+  </div>
+{% endfor %}
+{% endblock skills %}
+
+{% block reference %}
+<div class="row">
+  <h4 id="exp">Reference</h4>
+</div>
+{% for list in lists %}
+  <div id="bottom_margin">
+    <p>{{ list.reference|linebreaksbr }}</p>
+  </div>
+{% endfor %}
+{% endblock reference %}

@@ -1,0 +1,39 @@
+{% load static %}
+<html>
+<head>
+  <title>Minchang's CV</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css?after">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css?after">
+  <link rel="stylesheet" href="{% static 'css/cv.css' %}" type="text/css">
+</head>
+<body>
+  <div class="col-md-offset-2 col-md-8" style="background: #E4E5E9" id="wrapper">
+    <div id="header">
+      <div>
+      <!--  <img src="/image/01.jpg" id="image"-->
+      </div>
+      <div>
+        <h2 id="name">Minchang Chung</h2>
+        <p id="underline"></p>
+        <h5 id="ai">AI developer</h5>
+      </div>
+    </div>
+    <div id="info">
+      <div>
+        <h6>Address: 25-27, Bangbae-ro 20-gil, Seocho-gu, Seoul, Republic of Korea</h6> <h6>  Phone: +82 10 3753 1683&nbsp&nbsp&nbsp&nbsp&nbspMail: kevin970816@gmail.com</h6>
+    </div>
+    <!-- end header -->
+    {% block research %}
+    {% endblock %}
+    {% block education %}
+    {% endblock %}
+    {% block experience %}
+    {% endblock %}
+    {% block skills %}
+    {% endblock %}
+    {% block reference %}
+    {% endblock %}
+    </div>
+
+</body>
+</html>

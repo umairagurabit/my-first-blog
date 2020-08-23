@@ -1,0 +1,37 @@
+#header {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  background: black;
+  color: white;
+}
+figure{
+  margin: 0;
+  position: relative;
+}
+#experience{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 4fr;
+  margin-left: 40px;
+}
+#name{
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+#ai{
+  letter-spacing: 0.2px;
+  margin-top: 30px;
+}
+#underline{
+  width: 440px;
+  height: 7px;
+  margin-top: 20px;
+  background: #CECED0;
+}
+#exp{
+  background: #CDCDCF;
+  padding: 10px;
+}
+#bottom_margin{
+  margin-bottom: 40px;
+}
